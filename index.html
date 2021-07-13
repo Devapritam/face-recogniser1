@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,13 +33,15 @@
             <hr>
           </b>
           <br><br>
-          <div class="outerCamera">
-            <label class="header">Webcam View - </label>
-            <div id="camera"></div>
-          </div>
-          <div class="outerResultImg">
-            <label class="header">Final Image - </label>
-            <div id="resultImg"></div>
+          <div class="elements">
+            <div class="outerCamera">
+              <label class="header">Webcam View - </label>
+              <div id="camera"></div>
+            </div>
+            <div class="outerResultImg">
+              <label class="header">Final Image - </label>
+              <div id="resultImg"></div>
+            </div>
           </div>
           <div class="button-group">
             <button id="captureImg" onclick="captureImg()" class="btn btn-primary">Capture Image</button>
